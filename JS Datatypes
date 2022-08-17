@@ -1,0 +1,44 @@
+<HTML>
+    <HEAD>
+        <TITLE>Java Script Datatypes</TITLE>
+    </HEAD>
+    <BODY>
+        <h1>Using Datatypes-:</h1>
+        <h2>How to debugging the JS using console.log with ES5 and ES6 Method:</h2>
+        <script>
+        let a=34
+        let b=1
+
+        //ES5
+        console.log("value is "+a+" but ans is "+b);
+
+        //ES6
+        // Template Literal/string-backtick
+        console.log(`value is ${a} but ans is ${b}`);
+
+        // Boolean datatypes
+        var bool=true;
+        console.log(typeof bool);
+
+        // Number datatypes
+        var num=54;
+        console.log(typeof num);
+
+        // Null datatypes
+        var obj=null;
+        console.log(typeof n);
+
+        // undefined datatypes
+        var undef=undefined;
+        console.log(typeof u);
+        
+        // String datatypes
+        var str='hi';
+        console.log(typeof s);
+        
+        // BigInt datatypes
+        var num =345869295n;
+        console.log(typeof num);
+        </script>
+    </BODY>
+</html>
