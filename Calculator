@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" name="first" id="first" step="any" placeholder="Enter First Number"/>
+    <select id="operator">
+        <option>Operators</option>
+        <option value="+">Addition</option>
+        <option value="-">Subtraction</option>
+        <option value="*">Multiplication</option>
+        <option value="/">Division</option>
+        <option value="**">Exponential</option>
+        <option value="%">Remainder</option>
+    </select>
+    <input type="number" name="second" id="second" step="any" placeholder="Enter Second Number"/>
+       </br></br>
+    <button onclick="cal()">Calculate</button>
+    <input type="text" name="res" id="res" readonly/>
+</body>
+<script>
+    function cal(){
+    var opr1 = document.getElementById("first").value;
+    var opr2 = document.getElementById("second").value;
+    var ope = document.getElementById("operator").value;
+    if (ope == "+"){
+        var res = parseInt(opr1) + parseInt(opr2);
+    }
+    if (ope == "-"){
+        var res = parseInt(opr1) - parseInt(opr2);
+    }
+    if (ope == "*"){
+        var res = parseInt(opr1) * parseInt(opr2);
+    }
+    if (ope == "/"){
+        var res = parseInt(opr1) / parseInt(opr2);
+    }
+    if (ope == "**"){
+        var res = parseInt(opr1) ** parseInt(opr2);
+    }
+    if (ope == "%"){
+        var res = parseInt(opr1) % parseInt(opr2);
+    }
+    document.getElementById("res").value = res;
+    }
+</script>
+</html>
