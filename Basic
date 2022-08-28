@@ -1,0 +1,7 @@
+console.time('Your code time');
+console.log("Hello World");
+// console.clear();
+console.table({name: "harry", age:34});
+console.warn("THis is a warning");
+console.error("this is an error");
+console.timeEnd('Your code time');
