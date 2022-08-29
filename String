@@ -1,0 +1,73 @@
+// String are used to store and manipulate text.
+
+let name = "harry"
+console.log(name);
+
+// Template Literals use backticks instead of quotes to define a string.
+
+let f1 = "Nikhil"; 
+let f2 = "Siddarth";
+
+let s = `${f1} is a friend of ${f2}.`;
+console.log(s);
+
+// Escape Sequence Characters
+
+let fruit = "Bana\'na"
+console.log(fruit);
+console.log(fruit.length); // Property
+
+// String Methods:-
+
+console.log(name.toUpperCase());
+
+console.log(name.toLowerCase());
+
+console.log(name.slice(2,4));
+console.log(name.slice(2));
+console.log(name.slice(-4,-2));
+
+console.log(name.replace("harr","man"));
+
+let name1 = "iris"
+let name2 = "naira"
+console.log(name1.concat(" is a friend of " , name2));
+
+let n = "     Visha     "
+console.log(n.trim());
+
+// Use a for to print a string.
+
+let a = "shivika";
+
+for (i=0; i<= a.length; i++);
+console.log(a.slice(0, a.length));
+console.log(a[0]);
+console.log(a[1]);
+console.log(a[2]);
+console.log(a[3]);
+console.log(a[4]);
+console.log(a[5]);
+console.log(a[6]);
+
+a[4] = "o" // this is not possible because string is immutable.
+
+console.log(name); // All string methods return a new string. They don't modify the original string.
+
+// substr : second parameter specifies the length of the extracted part.
+
+let fruits = "Apple,Mango,Banana"
+let part = fruits.substr(6,5);
+console.log(part);
+
+// substring : same as slice but negative is not support.
+
+let f = fruits.substring(6,11)
+console.log(f)
+
+let text = "Hello World"
+console.log(text.charAt(6));
+
+console.log(text.split());
+console.log(text.split(" "));
+
