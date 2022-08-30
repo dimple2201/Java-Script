@@ -1,0 +1,64 @@
+// round : return the nearest interger
+
+let a = 4.6
+console.log(Math.round(a))
+
+let b = 4.5
+console.log(Math.round(b))
+
+let c = 4.4
+console.log(Math.round(c))
+
+// PI : return the PI value
+
+console.log(Math.PI)
+
+// ceil : return rounded up interger
+
+console.log(Math.ceil(c))
+
+let x = -4.3
+console.log(Math.ceil(x))
+
+// floor : return rounded down interger
+
+let y = 4.9
+console.log(Math.floor(y))
+
+console.log(Math.floor(x))
+
+// trunc : return the interger part
+
+let z = 21.2
+console.log(Math.trunc(z))
+
+// sign : return if value is negative(-1), null(0), positive(1)
+
+let sign = -2
+console.log(Math.sign(sign))
+
+console.log(Math.sign(y))
+
+// pow : return the value of 6 to the power 2.
+
+console.log(Math.pow(6,2))
+
+// sqrt : return the square root of 121 is 11.
+
+console.log(Math.sqrt(121))
+
+// abs: return the absolute (positive) value of x.
+
+console.log(Math.abs(-3.5))
+
+// min : used to find the lowest value.
+
+console.log(Math.min(5,33,0,-6))
+
+// max : used to find the highest value.
+
+console.log(Math.max(34,65,22,95,-34))
+
+// random : return a random number b/w 0(inclusive) and 1(exclusive)
+
+console.log(Math.random(0))
