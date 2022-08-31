@@ -1,0 +1,63 @@
+// for loop
+// Print number 1 to 10.
+
+for (let i=1; i<=10; i++){
+    console.log(i);
+}
+
+// // Program to add first n natural numbers.
+
+let n = 10;
+n = Number.parseInt(n);
+let sum = 0;
+for ( let i=0; i<=n; i++){
+    sum = sum+i;
+}
+console.log(sum);
+
+// // Write a program to factorial of 5.
+
+let fact = 5;
+fact = Number.parseInt(fact);
+let mul = 1;
+for(let i=1; i<=5; i++){
+    mul = mul* i;
+}
+console.log(mul);
+
+// for-in loop
+
+let obj = {
+    Harry : 34,
+    Many : 75,
+    John : 56,
+    Rosse : 86
+}
+for (let a in obj){
+    console.log(a);
+    console.log(obj[a]);
+}
+ 
+// for-of loop
+
+for (let b of "Hey!"){
+    console.log(b)
+}
+
+// while loop
+
+let w = 0;
+while(w <=5){
+    console.log(w);
+       w++;
+}
+
+
+// do-while loop
+
+let d = 0;
+do {
+    console.log(d);
+    d++;
+}
+while(d <= 12);
