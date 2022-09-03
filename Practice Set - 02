@@ -1,0 +1,61 @@
+<script>
+        // Use Logical expression to find whether the age of a person lies b/w 10 and 20.
+
+          let age = prompt("What is your age?")
+          age = Number.parseInt(age);
+          if (age >= 10 && age <=20){
+            console.log("Person's age lies b/w 10 and 20")
+          }
+          else{
+            console.log("Person is less than 10 age or greater than 20 age")
+          }
+
+          // Demonstrate the use of switch case statements in JavaScript.
+
+          let marks =prompt("Enter your marks");
+          switch (marks){
+            case '100':   
+                console.log("Your grade is A");
+                break;
+            case '60':
+                console.log("Your grage is B");
+                break;
+            case '40': 
+                console.log("YOur grade is C");
+                break;
+            case '20': 
+                console.log("YOur grade is D");
+                break;
+            default: 
+                console.log("Your are not pass with good grade");
+        }
+
+        // Write a JavaScript program to find whether a number is divisible by 2 and 3.
+
+        let num = prompt("Enter a Number");
+        num = Number.parseInt(num);
+        if(num % 2 == 0 && num % 3 == 0){
+            console.log("Number is divisible by 2 and 3");
+        }
+        else{
+            console.log("Number is not divisible by 2 and 3")
+        }
+
+        //Write a JavaScript program to find whether a number is divisible either by 2 or 3.
+
+        let n = prompt("Enter a Number");
+        n = Number.parseInt(n);
+        if(n % 2 == 0 || n % 3 == 0){
+            console.log("Number is divisible by either 2 or 3");
+        }
+        else{
+            console.log("Number is not divisible by either 2 or 3");
+        }
+
+        // Print "you can drive" or "you cannot drive" based on your age being greater than 18 or not using ternary operator.
+
+        let a = prompt("Enter your age");
+        a = Number.parseInt(a);
+        let x = a >= 18 ? 'you can drive' : 'you cannot drive';
+        console.log(x);
+    </script>
