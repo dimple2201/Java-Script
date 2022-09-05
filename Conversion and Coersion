@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversion and Coercion</title>
+</head>
+<body>
+    <script>
+        // Type Conversion
+
+        let num;
+        num = 34;
+        console.log(num,(typeof  num));
+        num = String(num);
+        console.log(num,(typeof num));
+
+        let bool = true;
+        console.log(bool,(typeof bool));
+        bool = String(bool);
+        console.log(bool,(typeof bool));
+
+        let date = new Date();
+        console.log(date,(typeof date));
+        date = String(new Date);
+        console.log(date,(typeof date));
+
+        let arr = [3,5,3,6,7];
+        console.log(arr, arr.length,(typeof arr));
+        arr = String(arr);
+        console.log(arr, arr.length,(typeof arr));
+
+        let i = 8;
+        console.log(i.toString());
+
+        let str = "342";
+        str = Number(str);
+        str = Number("34j25");
+        str = Number(false)
+        console.log(str,(typeof str));
+
+        let number = "34";
+        number = Number.parseInt(number);
+        console.log(number, (typeof number));
+
+        let number1 = '34.242';
+        number1 = Number.parseFloat(number1);
+        console.log(number1, (typeof number1));
+
+        // toFixed : Show how many number do want after decimal.
+        console.log(number1.toFixed(2));
+
+        // Type Coercion
+
+        let num1 = 34;
+        let str1 = Number('345');
+        console.log(num1+str1);
+
+    </script>
+</body>
+</html
