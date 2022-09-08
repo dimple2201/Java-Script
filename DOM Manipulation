@@ -1,0 +1,47 @@
+//How to create an element with the help of DOM Manipulation
+
+let element = document.createElement("div");
+
+element.className = "box";
+element.id = "box1";
+element.innerHTML = "<i>This is created element through DOM manipulation</i>"
+
+let add = document.querySelector('small.hi')
+add.appendChild(element);
+console.log(add);
+console.log(element)
+
+let box = document.createElement("div");
+
+box.className = "box";
+box.setAttribute = ('title', 'box');
+box.innerText = "second created element"
+
+//how to replace element
+
+element.replaceWith(box);
+
+// remove element
+
+let a = document.getElementById('first');
+a.removeChild(document.getElementById("ii"));
+
+// how to get element's id and class or any other info.
+
+let c = box.getAttribute('class');
+console.log(c)
+
+let h = box.hasAttribute("title")
+console.log(h);
+
+// create a heading element with text as go to Google and create an a tag outside it with href = "https://www.google.com"
+
+let heading = document.createElement("h2");
+let text = document.createTextNode("GO TO GOOGLE");
+heading.appendChild(text);
+
+heading.setAttribute = ("href",'https//:www.google.com')
+
+let li = document.querySelector("div.first");
+li.appendChild(heading);
+console.log(li);
