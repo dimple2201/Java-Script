@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Water & Gun Game</title>
+    <style>
+        body{
+            background-color: aquamarine;
+            font-size: 40px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // Use JavaScript to create a game of Snake Water & Gun. The game should ask you to enter S,W or G. The Computer Should be able to randomly generate S,W or G and declare Win or Lose using alert. Use confirm and prompt wherever required.
+
+    
+         let user = prompt('Enter an alpha among S, W or G');
+         let cpuI = Math.floor(Math.random() * 3);
+         let cpu = ["S" , "W" , "G"][cpuI]
+
+        const match = (cpu , user)=>{
+
+            if(cpu === user){
+                return "Game is DRAW"
+            }
+            else if(cpu === "S" && user === "W"){
+                return " cpu is WINNER"
+            }
+            else if(cpu === "S" && user === "G"){
+                return "user is WINNER"
+            }
+            else if(cpu === "W" && user === "G"){
+                 return "cpu is WINNER"
+            }
+            else if (cpu === "W" && user === "S"){
+                 return "user is WINNER"
+            }
+            else if(cpu === "G" && user === "S"){
+                return "cpu is WINNER"
+            }
+            else if(cpu === "G" && user === "W"){
+                return "user is WINNER"
+            }
+        }
+        let result = match(cpu , user)
+        alert (`RESULT : ${result}`)
+        document.write(`CPU : ${cpu} <br> USER : ${user} <BR> Result : Congratulations! ${result}`)     
+    </script>
+</body>
+</html>
