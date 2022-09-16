@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Set-04</title>
+</head>
+<body>
+    <script>
+        // length of following code:-
+
+        let str = "her\'";
+        console.log(str.length);
+
+        // Explore the includes, start with and end with function of a string.
+
+        const sentence = "The quick brown fox jumps over the lazy dog.";
+        const word = 'over';
+        console.log(sentence.includes(word));
+        // console.log(`The word ${word} ${sentence.includes(word)} ? is : is not include in `${sentence});
+
+        // Extract the amount out of this string.
+
+        let string = "Please give Rs. 2000"
+        // let amount = Number.parseInt(string.slice(16,21));
+        // let amount = (string.slice(15));
+        let amount = string.slice("Please give Rs. ".length);
+
+        console.log(amount);
+
+        // Try to change 4th character of a given string.
+
+        let name = "Deepika"
+        name[3] = "o"
+
+        console.log(name);
+
+        // Note : name is not change but update because string is immutable.
+    </script>
+</body>
+</html>
