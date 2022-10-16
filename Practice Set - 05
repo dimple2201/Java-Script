@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Set - 05</title>
+</head>
+<body>
+    <script>
+        1.Create an array of numbers and take input from the user to add numbers to this array.
+
+        let arr = [3,42,5,6,23,64,54];
+        let num = prompt("Enter the number");
+        num = Number.parseInt(num);
+        arr.push(num);
+        console.log(arr);
+
+        //2.Keep adding numbers in the  above array until 0 is added to the array.
+         
+        let arr1 = [3,42,5,6,23,64,54];
+        let a;
+        while(a!=0){
+            a = prompt("Enter the number");
+            a = Number.parseInt(a);
+            arr1.push(a);
+            console.log(arr1);
+        }
+        
+        let a1;
+        do{
+            a1 = prompt("Enter the number");
+            a1 = Number.parseInt(a1);
+            arr1.push(a1);
+        } while(a1!=0);
+        console.log(arr1);
+
+        //3.Filter for numbers divisible by 10 from a  given array.
+
+        let arr2 = [34,50,20,5,10,90,34,60];
+        let div = arr2.filter((value)=>{
+            return value % 10 == 0;
+        })
+        console.log(div);
+
+        //4. Create an array of square of given numbers.
+        
+        let arr3 = [2,6,12,15,20,5];
+        let sqr = arr3.map((square)=>{
+            return square * square
+        })
+        console.log(sqr);
+
+        //OR
+
+        arr3.forEach((s)=>{
+            console.log(s*s);
+        })
+
+        //5. Use reduce to calculate factorial of a given number from an array of first n natural numbers.
+
+        let arr4 = [1,2,3,4,5,6,7,8];
+        let fact = arr4.reduce((f1,f2)=>{
+            return f1 * f2
+        })
+        console.log(fact);
+    </script>
+    
+</body>
+</html>
