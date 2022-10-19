@@ -1,0 +1,69 @@
+// object
+
+let obj = {
+    name: "Divish",
+    age: 14,
+    standard: "Seventh",
+    marks: 96,
+}
+
+function Obj(givenName) {
+    this.name = givenName
+}
+
+Obj.prototype.getName = function () {
+    return this.name;
+}
+
+Obj.prototype.setName = function (newName) {
+    this.name = newName;
+}
+
+let obj2 = new Obj("Harry");
+console.log(obj2)
+
+// Class
+
+class Employee{
+    constructor(name,experience,division){
+        this.name = name;
+        this.experience = experience;
+        this.division = division;
+    }
+    slogan(){
+        return`I am ${this.name} and this company is the best`
+    }
+    static add(a,b){
+        return a+b;
+    }
+}
+
+Object = new Employee("Naira", 3 , "Division");
+console.log(Object);
+console.log(Employee.add (4,1));
+
+// Inheritance
+
+class Programmer extends Employee{
+    constructor(name,experience,division,language){
+        super(name,experience,division);
+        this.language = language
+    }
+    favouriteLanguage(){
+        if(this.language=="python"){
+            return "python";
+        }
+        else{
+            return "JavaScript";
+        }
+    }
+
+     static mul(a,b){
+        return a*b;
+     }
+}
+
+Pro = new Programmer("Divya", 5 , "Division" , "ruby")
+console.log(Pro)
+console.log(Pro.favouriteLanguage())
+console.log(Programmer.mul(4,5));
